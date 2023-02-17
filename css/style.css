@@ -143,11 +143,11 @@
   }
   
   /* Full-width containers */
-  .container {
+  /* .container {
   width: 100%;
   padding-left: 70px;
   padding-right: 25px;
-  }
+  } */
   .timeline-container{
     width: 100%;
   }
