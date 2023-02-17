@@ -114,6 +114,7 @@
 /* Place the container to the left */
 .left {
   left: 0;
+  text-align: right;
 }
 
 /* Place the container to the right */
@@ -130,24 +131,23 @@
 /* The actual content */
 .content {
   padding: 10px 10px;
-  /* background-color: white; */
+
   position: relative;
   border-radius: 6px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
+  .left{
+    text-align: left;
+  }
+
   /* Place the timelime to the left */
   .timeline::after {
   left: 31px;
   }
   
   /* Full-width containers */
-  /* .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  } */
   .timeline-container{
     width: 100%;
   }
