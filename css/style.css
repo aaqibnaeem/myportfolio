@@ -19,6 +19,12 @@
 .navbar-toggler-icon {
   color: #ffffff !important;
 }
+.nav-link {
+  transition: all 0.2s ease-in-out;
+}
+.nav-link:hover {
+  color: #70ff00 !important;
+}
 .contact-me-btn {
   background-color: transparent;
   color: #ffffff;
@@ -53,6 +59,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .swiper-slide img {
   display: block;
@@ -60,13 +67,13 @@
   height: 100%;
   object-fit: cover;
 }
-.swiper-row{
-  height : 300px;
+.swiper-row {
+  height: 300px;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
   background-color: #70ff00 !important;
 }
-.card{
+.card {
   border: 2px solid #70ff00;
   box-shadow: 0px 0px 3px rgb(175, 175, 175);
 }
@@ -79,7 +86,7 @@
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 2px;
   background-color: #70ff00;
@@ -99,7 +106,7 @@
 
 /* The circles on the timeline */
 .timeline-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -122,7 +129,6 @@
   left: 50%;
 }
 
-
 /* Fix the circle for containers on the right side */
 .right::after {
   left: -13px;
@@ -138,35 +144,36 @@
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-  .left{
+  .left {
     text-align: left;
   }
 
   /* Place the timelime to the left */
   .timeline::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   /* Full-width containers */
-  .timeline-container{
+  .timeline-container {
     width: 100%;
   }
-  
+
   /* Make sure that all arrows are pointing leftwards */
   .container::before {
-  left: 60px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
   }
 
   /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-  left: 18px;
+  .left::after,
+  .right::after {
+    left: 18px;
   }
-  
+
   /* Make all right containers behave like the left ones */
   .right {
-  left: 0%;
+    left: 0%;
   }
 }
